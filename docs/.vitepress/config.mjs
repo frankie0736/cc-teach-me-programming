@@ -54,7 +54,7 @@ export default defineConfig({
 
     footer: {
       message: '欢迎通过Issue分享你的学习心得！',
-      copyright: 'CC教我编程 © 2025'
+      copyright: '210工作室 © 2025'
     },
 
     search: {

@@ -87,18 +87,3 @@ touch blog-[主题]-[子主题].md
 2. 代码示例要完整可运行
 3. 敏感信息（密钥、密码等）绝不能提交
 4. 保持文章简洁实用，注重实践经验
-
-## VitePress 相关
-
-### 网站访问
-- 本地开发：`npm run docs:dev` 后访问 http://localhost:5173/cc-teach-me-programming/
-- 在线访问：https://frankie0736.github.io/cc-teach-me-programming/
-
-### 部署流程
-- 推送到 main 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages
-- 部署配置文件：`.github/workflows/deploy.yml`
-
-## 更新记录
-
-- 2025-08-03：创建项目和规则文档
-- 2025-08-03：集成 VitePress 文档网站
