@@ -15,17 +15,20 @@
 - 使用英文小写，单词间用连字符连接
 - 例如：`blog-supabase-keep-alive.md`
 
-### 2. README.md 维护
-- README.md 作为目录索引，不包含具体内容
-- 新增文章后必须更新README的目录部分
-- 目录格式：`- [文章标题](./文件路径) - YYYY-MM-DD`
+### 2. 文章存放位置
+- 所有文章存放在 `docs/notes/` 目录下的分类子目录中
+- 分类目录：
+  - `backend/` - 后端开发相关
+  - `frontend/` - 前端开发相关
+  - `tools/` - 工具使用技巧
+  - `thinking/` - 编程思维和方法论
+  - `projects/` - 项目实战经验
 
-### 3. 内容分类
-- 后端开发
-- 前端开发
-- 工具使用
-- 编程思维
-- 项目实战
+### 3. 新增文章流程
+1. 在对应分类目录下创建文章文件
+2. 更新 `docs/.vitepress/config.mjs` 的 sidebar 配置
+3. 更新 `docs/notes/index.md` 的文章列表
+4. README.md 现在只作为项目介绍，不再维护文章目录
 
 ## 文章格式规范
 
@@ -85,6 +88,17 @@ touch blog-[主题]-[子主题].md
 3. 敏感信息（密钥、密码等）绝不能提交
 4. 保持文章简洁实用，注重实践经验
 
+## VitePress 相关
+
+### 网站访问
+- 本地开发：`npm run docs:dev` 后访问 http://localhost:5173/cc-teach-me-programming/
+- 在线访问：https://frankie0736.github.io/cc-teach-me-programming/
+
+### 部署流程
+- 推送到 main 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages
+- 部署配置文件：`.github/workflows/deploy.yml`
+
 ## 更新记录
 
 - 2025-08-03：创建项目和规则文档
+- 2025-08-03：集成 VitePress 文档网站

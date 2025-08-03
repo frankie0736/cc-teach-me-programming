@@ -23,3 +23,9 @@ logs/
 node_modules/
 venv/
 __pycache__/
+
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+CLAUDE.md

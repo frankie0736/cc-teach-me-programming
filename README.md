@@ -2,33 +2,47 @@
 
 这是一个记录编程学习经验的仓库，由Claude Code（CC）辅助学习。
 
-## 关于这个项目
+## 🌐 在线阅读
 
-这个仓库用于存放我的编程学习笔记、心得和经验。欢迎大家一起交流学习！
+访问文档网站：[https://frankie0736.github.io/cc-teach-me-programming/](https://frankie0736.github.io/cc-teach-me-programming/)
 
-## 如何参与
+## 📖 关于项目
 
-- 🌟 给项目点个Star
-- 💬 通过Issue分享你的学习心得
-- 🤝 提交PR贡献你的经验
+这个仓库用于存放我的编程学习笔记、心得和经验。所有文章都基于实际项目经验，希望能帮助到其他学习者。
 
-## 📚 学习经验目录
+## 🚀 本地运行
 
-### 后端开发
-- [如何保持Supabase数据库活跃状态](./blog-supabase-keep-alive.md) - 2025-08-03
+```bash
+# 安装依赖
+npm install
 
-### 前端开发
-（待添加）
+# 启动开发服务器
+npm run docs:dev
 
-### 工具使用
-（待添加）
+# 构建静态网站
+npm run docs:build
+```
 
-### 编程思维
-（待添加）
+## 📝 文章结构
 
-### 项目实战
-（待添加）
+所有文章存放在 `docs/notes/` 目录下，按照以下分类组织：
 
-## 联系方式
+- `backend/` - 后端开发相关
+- `frontend/` - 前端开发相关
+- `tools/` - 工具使用技巧
+- `thinking/` - 编程思维和方法论
+- `projects/` - 项目实战经验
 
-欢迎通过Issue与我交流！
+## 🤝 如何贡献
+
+1. Fork 本仓库
+2. 创建你的文章分支 (`git checkout -b article/your-topic`)
+3. 在对应分类目录下创建文章
+4. 更新 VitePress 配置文件 `docs/.vitepress/config.mjs`
+5. 提交你的修改 (`git commit -m '添加文章：你的主题'`)
+6. 推送到分支 (`git push origin article/your-topic`)
+7. 创建 Pull Request
+
+## 📄 许可证
+
+MIT License
